@@ -17,7 +17,7 @@
       background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
       min-height: 100vh;
     }
-    container {
+    .container {
       max-width: 900px;
       margin: 0 auto;
       padding: 40px 20px;
@@ -117,7 +117,7 @@
   </style>
 </head>
 <body>
-  <container>
+  <div class="container">
     <header>
       <h1>Kim Won-Hyo</h1>
       <p class="subtitle">소프트웨어융합전공 전과 지원자 | 구조적 사고, 논리적 구현</p>
@@ -127,70 +127,72 @@
     <section>
       <h2>🎯 About Me</h2>
       <p>
-        현재 ○○학과에 재학 중이며, 소프트웨어융합전공으로의 전과를 희망하고 있습니다.
+        현재 응용화학과에 재학 중이며, 소프트웨어융합학과로의 전과를 희망하고 있습니다.
       </p>
       <p>
-        전공 수업과 개인 프로젝트를 수행하는 과정에서, 문제를 구조적으로 분석하고 논리적으로 해결하는 과정에 흥미를 느끼게 되었고, 특히 프로그래밍을 통해 이를 구현하는 경험이 인상 깊었습니다.
+        고등학생 시절 물리·화학 문제를 해결하는 과정에서, 주어진 수치와 조건 간의 관계를 분석하고 이를 하나의 구조로 정리하는 사고 과정에 흥미를 느껴왔습니다. 이러한 사고 방식은 대학 진학 이후에도 유지되었으며, 전공 수업과 개인 활동을 통해 점차 프로그래밍과의 유사성을 인식하게 되었습니다.
       </p>
       <p>
-        이러한 경험을 계기로 소프트웨어를 단순한 도구가 아닌 하나의 사고 체계로 인식하게 되었으며, 이를 체계적으로 학습하고자 전과를 지원하게 되었습니다.
+        특히 프로그래밍은 문제를 구성하는 요소 간의 관계를 명확히 정의하고, 그 규칙이 일관되게 작동하도록 설계하는 학문이라는 점에서 제 사고 방식과 잘 맞는다고 느꼈습니다. 이에 따라 소프트웨어를 단순한 기술이 아닌 하나의 사고 체계로 인식하게 되었고, 이를 체계적으로 학습하고자 전과를 지원하게 되었습니다.
       </p>
     </section>
 
     <!-- 2. 카드 프로젝트 -->
     <section>
-      <h2>💳 카드 프로젝트 — 설계 기반 게임 개발</h2>
+      <h2>💳 카드 프로젝트 — 데이터 구조 기반 설계 경험</h2>
+
       <div class="project-card">
-        <div class="project-title">프로젝트 개요</div>
+        <div class="project-title">프로젝트 배경</div>
         <p>
-          카드의 속성과 효과를 데이터 구조로 관리하는 카드 게임 프로젝트를 개인적으로 진행하였습니다.
+          보드게임 동아리 활동 중 카드 데이터를 관리하고 공유하는 과정에서 반복적인 불편함을 느끼게 되었고, 이를 해결하기 위한 프로그램을 직접 설계·구현하였습니다.
         </p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">목표 및 설계 전략</div>
+        <div class="project-title">설계 목표</div>
         <p>
-          단순히 화면에 카드를 나열하는 방식이 아니라, 카드의 이름·효과·스탯을 하나의 구조로 정의하고, 이를 바탕으로 게임 로직이 동작하도록 설계하는 것을 목표로 하였습니다.
+          카드의 외형이나 연출보다, 카드가 가지는 속성·효과·조건을 데이터 구조로 정의하고, 해당 구조를 기반으로 로직이 동작하도록 설계하는 것을 목표로 하였습니다.
         </p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">구현 포인트</div>
+        <div class="project-title">구현 및 판단</div>
         <p>
-          이 과정에서 카드 정보를 객체 단위로 관리하고, 조건에 따라 효과가 적용되도록 로직을 구성하였으며, 기능 추가 시 기존 구조를 크게 변경하지 않아도 되도록 설계의 중요성을 체감하였습니다.
+          카드 정보를 객체 단위로 관리하고, 덱 단위로 구성할 수 있도록 구조를 설계하였습니다. 또한 프로젝트의 목적에 부합하지 않는 네트워크 기능은 과감히 배제하고, JSON 기반 데이터 공유 방식(Base64 인코딩)을 선택하여 문제 해결에 집중하였습니다.
         </p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">핵심 학습</div>
+        <div class="project-title">의미</div>
         <p>
-          해당 프로젝트를 통해 프로그램의 동작뿐만 아니라, <strong>확장성과 유지보수를 고려한 구조 설계의 필요성</strong>을 배우게 되었습니다.
+          이 프로젝트를 통해 기능 구현 자체보다, 문제의 본질을 정의하고 목적에 맞는 구조를 선택하는 것이 소프트웨어 개발에서 얼마나 중요한지 체감하게 되었습니다.
         </p>
-        <p class="note">→ 카드 풀 공유: <a href="https://github.com/skyblue220?tab=repositories" style="display: inline;">GitHub 저장소</a></p>
+        <p class="note">→ 카드 프로젝트 GitHub: <a href="https://github.com/skyblue220?tab=repositories" style="display:inline;">저장소 바로가기</a></p>
       </div>
     </section>
 
     <!-- 3. 실험 프로그램 -->
     <section>
-      <h2>🎮 Unity 기반 실험 프로그램 — 대회 출품작</h2>
+      <h2>🎮 Unity 기반 과학 실험 시뮬레이션</h2>
+
       <div class="project-card">
-        <div class="project-title">프로젝트 성격</div>
+        <div class="project-title">프로젝트 배경</div>
         <p>
-          Unity를 활용하여 제작한 프로젝트로, 실제 과학 실험 시뮬레이션 대회에 출품하여 시연한 경험이 있습니다.
+          코로나19로 인해 실제 실험 수행이 어려운 상황에서, 실험 과정을 정리하고 이를 대체할 수 있는 시뮬레이션 프로그램을 Unity로 제작하였습니다.
         </p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">담당 역할 및 구현</div>
+        <div class="project-title">구현 내용</div>
         <p>
-          해당 프로젝트에서 시스템 설계와 주요 기능 구현을 담당하였으며, 사용자 입력에 따라 상태가 변화하는 구조와 시각적 피드백을 제공하는 로직을 구현하였습니다.
+          사용자 입력에 따라 실험 단계와 결과가 변화하도록 상태 전이 구조를 설계하였으며, 실험 절차의 흐름이 직관적으로 이해될 수 있도록 시각적 피드백을 구현하였습니다.
         </p>
       </div>
 
       <div class="project-card">
-        <div class="project-title">시연 영상</div>
+        <div class="project-title">활용 및 결과</div>
         <p>
-          프로젝트 파일은 현재 보존되어 있지 않으나, 당시의 구현 내용과 동작 방식은 아래의 시연 영상을 통해 확인할 수 있습니다.
+          해당 프로젝트는 실제 과학 실험 시뮬레이션 대회에 출품되어 발표 및 시연 자료로 활용되었으며, 아래 영상은 당시 사용된 시연 영상입니다.
         </p>
         <p class="links">
           <a href="https://www.youtube.com/watch?v=DzNGZW_eLyA" target="_blank">📹 시연 영상 보기</a>
@@ -198,9 +200,9 @@
       </div>
 
       <div class="project-card">
-        <div class="project-title">반성과 성장</div>
+        <div class="project-title">학습 포인트</div>
         <p>
-          이 경험을 통해 소프트웨어 구현 결과를 명확하게 전달하기 위해 <strong>기록과 버전 관리의 중요성</strong>을 인식하게 되었으며, 이후 GitHub를 활용한 프로젝트 관리에 관심을 갖게 되었습니다.
+          이 경험을 통해 구현 결과를 기록으로 남기는 것의 중요성을 인식하게 되었으며, 이후 프로젝트에서는 GitHub를 활용한 버전 관리와 문서화를 병행하고자 노력하고 있습니다.
         </p>
       </div>
     </section>
@@ -209,12 +211,12 @@
     <section>
       <h2>💡 핵심 철학</h2>
       <div class="highlight">
-        <h3>생각 → 선택 → 결과</h3>
+        <h3>문제를 정의하고, 구조로 해결하다</h3>
         <p>
-          모든 경험은 <strong>구조적 사고</strong>로 시작되고, 그 경험이 세계관의 변화로 이어지는 과정을 거칩니다. 제 포트폴리오의 각 프로젝트는 단순한 결과물이 아닌, 그 과정에서의 인식 변화를 담고 있습니다.
+          저는 문제를 구성하는 요소들 간의 관계를 정의하고, 그 규칙이 일관되게 작동하도록 구조를 설계하는 과정에서 가장 큰 학습 효과를 느낍니다.
         </p>
         <p style="margin-top: 15px;">
-          전과라는 선택으로 이어진 이유는 "이렇게 하면 더 잘 배울 수 있을 것 같았기 때문"입니다.
+          전과라는 선택 역시 단순한 흥미가 아닌, 이러한 사고 방식을 가장 효과적으로 발전시킬 수 있는 환경을 찾는 과정의 결과라고 생각합니다.
         </p>
       </div>
     </section>
@@ -223,6 +225,6 @@
       <p>© 2026 Kim Won-Hyo. All rights reserved.</p>
       <p><a href="https://github.com/skyblue220" style="color: #1a73e8; text-decoration: none;">GitHub</a></p>
     </footer>
-  </container>
+  </div>
 </body>
 </html>
